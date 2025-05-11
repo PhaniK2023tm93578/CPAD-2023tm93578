@@ -11,7 +11,7 @@ class SignupPage extends StatefulWidget {
 
 class _SignupPageState extends State<SignupPage> {
   final TextEditingController _usernameController = TextEditingController();
-  final TextEditingController _emailController = TextEditingController(); // Controller for email
+  final TextEditingController _emailController = TextEditingController(); 
   final TextEditingController _passwordController = TextEditingController();
   final TextEditingController _confirmPasswordController = TextEditingController();
   String _signupError = '';
@@ -23,7 +23,7 @@ class _SignupPageState extends State<SignupPage> {
       _signupError = '';
     });
     final String username = _usernameController.text.trim();
-    final String email = _emailController.text.trim(); // Get email from controller
+    final String email = _emailController.text.trim(); 
     final String password = _passwordController.text.trim();
     final String confirmPassword = _confirmPasswordController.text.trim();
 
@@ -43,7 +43,7 @@ class _SignupPageState extends State<SignupPage> {
       return;
     }
 
-    final user = ParseUser(username, password, email); // Pass the email here
+    final user = ParseUser(username, password, email); 
 
     try {
       final ParseResponse response = await user.signUp();
@@ -90,7 +90,7 @@ class _SignupPageState extends State<SignupPage> {
               ),
               const SizedBox(height: 20.0),
               TextField(
-                controller: _emailController, // Make sure this controller is linked to the TextField
+                controller: _emailController,
                 keyboardType: TextInputType.emailAddress,
                 decoration: const InputDecoration(
                   labelText: 'Email',
