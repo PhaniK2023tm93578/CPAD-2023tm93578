@@ -4,7 +4,12 @@ A new Flutter project.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+1. Clone the repository
+2. Run `flutter clean`
+3. Run `flutter pub get`
+4. Run `flutter emulators`
+5. Run `flutter emulators --launch <emulator_id>`
+7. Run `flutter run`
 
 A few resources to get you started if this is your first Flutter project:
 
